@@ -1,0 +1,47 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name" : "Star Test",
+    "starSystem": "EyeOfTheUniverse",
+	"Base" :
+	{
+		"surfaceGravity" : 50,
+		"surfaceSize" : 200,
+		"hasMapMarker" : true,
+		"gravityFallOff" : "inverseSquared"
+	},
+	"Orbit" :
+	{
+		"semiMajorAxis" : 32000,
+		"trueAnomaly" : 33,
+		"primaryBody" : "Eye",
+		"isStatic" : true
+	},
+	"Star" :
+	{
+		"size" : 200,
+		"tint" : { "r" : 5, "g" : 38, "b" : 255, "a" : 255 },
+		"endTint" : { "r" : 255, "g" : 38, "b" : 255, "a" : 255 },
+		"solarLuminosity" : 0.6,
+		"curve":[
+			{"time": 0, "value":1},
+			{"time": 21.5, "value":1},
+			{"time": 22, "value":2}
+		],
+		"lifespan": 22,
+		"supernovaSize": 10000,
+		"stellarDeathType": "supernova"
+	},
+    "Props": {
+        "singularities": [
+            {
+                "uniqueID": "TestB",
+                "type": "blackHole",
+                "position": {
+                    "x": 300
+                },
+                "size": 50,
+                "pairedSingularity": "TestW"
+            }
+        ]
+    }
+}

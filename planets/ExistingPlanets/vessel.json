@@ -3,6 +3,17 @@
 	"name" : "Vessel",
 	"starSystem" : "EyeOfTheUniverse",
     "Props": {
+        "singularities": [
+            {
+                "uniqueID": "TestW",
+                "type": "whiteHole",
+                "position": {
+                    "x": 500
+                },
+                "size": 10,
+                "pairedSingularity": "TestB"
+            }
+        ],
 		"details": [
 			{
 				"rename": "Ernesto",
@@ -59,6 +70,48 @@
 					"y": 223.253128,
 					"z": 359.893951
 				}
+			},
+			{
+				"position": {"x": 15.479, "y": -50.6244, "z": 183.2454},
+				"xmlFile": "planets/Text/Computer.xml",
+				"type": "preCrashComputer"
+			},
+			{
+				"position": {"x": 28.2821, "y": -41.8313, "z": 183.9214},
+				"rotation": {"x": 358.4885, "y": 276.013, "z": 257.7496},
+				"xmlFile": "planets/Text/Cairn.xml",
+				"type": "cairn"
+			},
+			{
+				"position" : {"x": 26.7683, "y": -39.872, "z": 186.0676},
+				"rotation" : {"x": 17.0802, "y": 105.9782, "z": 102.4818},
+				"xmlFile": "planets/Text/Recorder.xml",
+				"type": "recorder"
+			},
+			{
+				"position": {"x": 12.21984, "y": -47.2570343, "z": 184.525375},
+				"rotation": {"x": 1.174564, "y": 93.83414, "z": 104.610825},
+				"xmlFile": "planets/Text/Trailmarker.xml",
+				"type": "trailmarker"
+			},
+			{
+				"position": {
+					"x": 13.56,
+					"y": 14.6,
+					"z": -19.2
+				},
+				"xmlFile": "planets/Text/WallText.xml",
+				"type": "scroll",
+				"seed": 10,
+				"arcInfo":[
+					{"position": {"x": 0, "y": 0}, "zRotation": 340, "type": "child"},
+					{"position": {"x": 0.31270, "y":  1.2733}, "zRotation": 140, "type": "stranger"},
+					{"position": {"x": -0.2968, "y":  1.7341}, "zRotation": 100, "type": "child"},
+					{"position": {"x": -0.7676, "y": 1.4533}, "zRotation": 160, "type": "adult"},
+					{"position": {"x": -1.0676, "y": 2.086}, "zRotation": 80, "type": "adult"},
+					{"position": {"x": -0.85, "y":  2.1}, "zRotation": 320, "type": "adult"},
+					{"position": {"x": 0.9988, "y": 1.7824}, "zRotation": 240, "type": "child"}
+				]
 			},
 			{
 				"xmlFile": "planets/Text/Text.xml",
